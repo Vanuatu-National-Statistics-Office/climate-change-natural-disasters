@@ -10,6 +10,15 @@ Climate Change Monitoring and Disaster Preparedness.
 | 14/11/2024  | TODO                                                  |
 
 
+## Getting started
+
+### Quickstart
+
+Launch on [Digital Earth Pacific Analytics Hub](https://hub.digitalearthpacific.org/hub).
+
+[![Open on DEP Analytics Hub](https://img.shields.io/badge/Open-DEP%20Analytics%20Hub-16a0d6?style=flat)](https://hub.digitalearthpacific.org/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FVanuatu-National-Statistics-Office%2Fclimate-change-natural-disasters&urlpath=lab%2Ftree%2Fclimate-change-natural-disasters%2F&branch=main)
+
+
 ## License
 
 <p xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under
