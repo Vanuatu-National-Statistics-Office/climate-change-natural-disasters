@@ -1,0 +1,8 @@
+name: digitalearthpacific
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - jupyterlab=4.1.5
+  - odc-stac>=0.3.2
+  - python=3.10
