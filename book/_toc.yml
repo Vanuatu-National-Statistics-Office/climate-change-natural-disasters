@@ -3,7 +3,15 @@
 
 format: jb-book
 root: intro
-chapters:
-- file: markdown
-- file: notebooks
-- file: markdown-notebooks
+parts:
+  - caption: Details
+    chapters:
+      - title: Training materials on GitHub
+        url: https://github.com/Vanuatu-National-Statistics-Office/climate-change-natural-disasters
+      - title: Digital Earth Pacific Analytics Hub
+        url: https://hub.digitalearthpacific.org
+  - caption: Tutorials
+    chapters:
+      - file: markdown
+      - file: notebooks
+      - file: markdown-notebooks
