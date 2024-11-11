@@ -13,5 +13,3 @@ parts:
   - caption: Tutorials
     chapters:
       - file: markdown
-      - file: notebooks
-      - file: markdown-notebooks
