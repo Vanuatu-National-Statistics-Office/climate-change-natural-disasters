@@ -5,9 +5,9 @@ Climate Change Monitoring and Disaster Preparedness.
 
 ## Schedule
 
-| Date        | Event                                                 |
-|:------------|:------------------------------------------------------|
-| 14/11/2024  | TODO                                                  |
+| Date       | Tutorial                                                                |
+|:-----------|:------------------------------------------------------------------------|
+| 14/11/2024 | [Lesson 1A: Intro to Selecting and Processing Raster Data](./book/Lesson_1A.ipynb) |
 
 
 ## Getting started
@@ -16,7 +16,7 @@ Climate Change Monitoring and Disaster Preparedness.
 
 Launch on [Digital Earth Pacific Analytics Hub](https://hub.digitalearthpacific.org/hub).
 
-[![Open on DEP Analytics Hub](https://img.shields.io/badge/Open-DEP%20Analytics%20Hub-16a0d6?style=flat)](https://hub.digitalearthpacific.org/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FVanuatu-National-Statistics-Office%2Fclimate-change-natural-disasters&urlpath=lab%2Ftree%2Fclimate-change-natural-disasters%2F&branch=main)
+[![Open on DEP Analytics Hub](https://img.shields.io/badge/Open-DEP%20Analytics%20Hub-16a0d6?style=flat)](https://hub.digitalearthpacific.org/hub/user-redirect/git-pull?repo=git%40github.com%3AVanuatu-National-Statistics-Office%2Fclimate-change-natural-disasters&urlpath=lab%2Ftree%2Fclimate-change-natural-disasters%2F&branch=main)
 
 
 ## License

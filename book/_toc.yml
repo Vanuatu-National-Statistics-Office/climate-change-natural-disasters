@@ -12,5 +12,4 @@ parts:
         url: https://hub.digitalearthpacific.org
   - caption: Tutorials
     chapters:
-      - file: markdown
       - file: Lesson_1A.ipynb
