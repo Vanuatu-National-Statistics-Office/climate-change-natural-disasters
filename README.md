@@ -5,9 +5,9 @@ Climate Change Monitoring and Disaster Preparedness.
 
 ## Schedule
 
-| Date        | Event                                                 |
-|:------------|:------------------------------------------------------|
-| 14/11/2024  | TODO                                                  |
+| Date       | Tutorial                                                                |
+|:-----------|:------------------------------------------------------------------------|
+| 14/11/2024 | [Lesson 1A: Intro to Selecting and Processing Raster Data](./book/Lesson_1A.ipynb) |
 
 
 ## Getting started
