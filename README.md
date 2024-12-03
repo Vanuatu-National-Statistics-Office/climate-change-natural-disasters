@@ -8,7 +8,8 @@ Climate Change Monitoring and Disaster Preparedness.
 | Date       | Tutorial                                                                |
 |:-----------|:------------------------------------------------------------------------|
 | 14/11/2024 | [Lesson 1A: Intro to Selecting and Processing Raster Data](./book/Lesson_1A.ipynb) |
-
+| 28/11/2024 | [Lesson 1A: Intro to Selecting and Processing Raster Data](./book/Lesson_1A.ipynb) (continued) |
+| 05/12/2024 | [Lesson 1B: Land Use / Land Cover Segmentation Using Sentinel-2 and Random Forest](./book/Lesson_1B.ipynb) |
 
 ## Getting started
 
