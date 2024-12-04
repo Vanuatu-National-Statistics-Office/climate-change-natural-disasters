@@ -13,3 +13,4 @@ parts:
   - caption: Tutorials
     chapters:
       - file: Lesson_1A.ipynb
+      - file: Lesson_1B.ipynb
