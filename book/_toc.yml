@@ -14,3 +14,4 @@ parts:
     chapters:
       - file: Lesson_1A.ipynb
       - file: Lesson_1B.ipynb
+      - file: Lesson_1C.ipynb
