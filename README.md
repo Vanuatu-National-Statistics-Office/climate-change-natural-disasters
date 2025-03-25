@@ -10,6 +10,7 @@ Climate Change Monitoring and Disaster Preparedness.
 | 14/11/2024 | [Lesson 1A: Intro to Selecting and Processing Raster Data](./book/Lesson_1A.ipynb) |
 | 28/11/2024 | [Lesson 1A: Intro to Selecting and Processing Raster Data](./book/Lesson_1A.ipynb) (continued) |
 | 05/12/2024 | [Lesson 1B: Land Use / Land Cover Segmentation Using Sentinel-2 and Random Forest](./book/Lesson_1B.ipynb) |
+| 26/03/2025 | [Lesson 1C: Segmentation workflow using PyTorch for flood and water mask detection](./book/Lesson_1C.ipynb) |
 
 ## Getting started
 
