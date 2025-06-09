@@ -7,3 +7,4 @@ dependencies:
   - jupyter-book=1.0.3
   - odc-stac>=0.3.2
   - python=3.10
+  - gdown
