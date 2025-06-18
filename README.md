@@ -12,7 +12,7 @@ Climate Change Monitoring and Disaster Preparedness.
 | 05/12/2024 | [Lesson 1B: Land Use / Land Cover Segmentation Using Sentinel-2 and Random Forest](./book/Lesson_1B.ipynb) |
 | 26/03/2025 | [Lesson 1C: Segmentation workflow using PyTorch for flood and water mask detection](./book/Lesson_1C.ipynb) |
 | 08/05/2025 | [Lesson 1D: Road segmentation](./book/Lesson_1D.ipynb) |
-| 12/06/2025 | TODO |
+| 19/06/2025 | [Lesson 1E: Full country Land Use / Land Cover Segmentation Using GeoMedian Composite Sentinel-2 and GPU-accelerated Random Forest](./book/Lesson_1D.ipynb) |
 
 ## Getting started
 
