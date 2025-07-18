@@ -6,6 +6,7 @@ dependencies:
   - cftime>=1.6.4
   - jupyterlab=4.1.5
   - jupyter-book=1.0.3
+  - matplotlib-base>=3.10.3
   - obstore>=0.7.0
   - odc-stac>=0.3.2
   - python=3.11
