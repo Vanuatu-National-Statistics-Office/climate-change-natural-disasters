@@ -1,3 +1,7 @@
+# Data files
+**/*.tif
+**/*.tiff
+
 # Jupyter Book
 /book/_build/
 
