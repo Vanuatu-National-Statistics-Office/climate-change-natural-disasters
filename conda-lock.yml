@@ -13,7 +13,7 @@
 version: 1
 metadata:
   content_hash:
-    linux-64: 912f9f784ec95b5a8e750c7f4e761ec02189cec9c00fce524f12f2e58750f976
+    linux-64: fa7677246c73af5912b42e96832299efc6c727fcca0b3aeb156ec16565ca91ee
   channels:
   - url: conda-forge
     used_env_vars: []
@@ -370,6 +370,22 @@ package:
     sha256: bc47aa39c8254e9e487b8bcd74cfa3b4a3de3648869eb1a0b89905986b668e35
   category: main
   optional: false
+- name: cftime
+  version: 1.6.4
+  manager: conda
+  platform: linux-64
+  dependencies:
+    __glibc: '>=2.17,<3.0.a0'
+    libgcc: '>=13'
+    numpy: '>=1.19,<3'
+    python: '>=3.11,<3.12.0a0'
+    python_abi: 3.11.*
+  url: https://conda.anaconda.org/conda-forge/linux-64/cftime-1.6.4-py311h9f3472d_1.conda
+  hash:
+    md5: 2c3c4f115d28ed9e001a271d5d8585aa
+    sha256: 8fa32d106c8757eac936105a5a14eb2eac0c66398cfa954855cb0bd220f003a5
+  category: main
+  optional: false
 - name: charset-normalizer
   version: 3.4.2
   manager: conda
@@ -494,19 +510,19 @@ package:
   category: main
   optional: false
 - name: debugpy
-  version: 1.8.14
+  version: 1.8.15
   manager: conda
   platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
-    libgcc: '>=13'
-    libstdcxx: '>=13'
-    python: '>=3.11,<3.12.0a0'
+    libgcc: '>=14'
+    libstdcxx: '>=14'
+    python: ''
     python_abi: 3.11.*
-  url: https://conda.anaconda.org/conda-forge/linux-64/debugpy-1.8.14-py311hfdbb021_0.conda
+  url: https://conda.anaconda.org/conda-forge/linux-64/debugpy-1.8.15-py311hc665b79_0.conda
   hash:
-    md5: 1c229452e28e2c4607457c7b6c839bc7
-    sha256: 2f6d43724f60828fa226a71f519248ecd1dd456f0d4fc5f887936c763ea726e4
+    md5: 27fd3bb353295538b2c81a26c618ecc8
+    sha256: fc50d7e7930d8cb3c21bcb987b7dc50a8369cba56f33347b2efcaeddbd928eef
   category: main
   optional: false
 - name: decorator
