@@ -13,7 +13,7 @@
 version: 1
 metadata:
   content_hash:
-    linux-64: f98a1f7d56d21eb9abd78f439546460d186b19816c3c3ae07512e8c994f89815
+    linux-64: dd232a17a79b4968e505e9226cc0dd445b01c751fb6e9976e7c028b33d830d67
   channels:
   - url: conda-forge
     used_env_vars: []
@@ -718,6 +718,28 @@ package:
   hash:
     md5: f84eb05fa7f862602bfaf4dd844bd61b
     sha256: b8da50f4b85f267f2369f9f1ac60f9a8dae547140f343023fdf61065fdf7ca0a
+  category: main
+  optional: false
+- name: cartopy
+  version: 0.24.0
+  manager: conda
+  platform: linux-64
+  dependencies:
+    __glibc: '>=2.17,<3.0.a0'
+    libgcc: '>=13'
+    libstdcxx: '>=13'
+    matplotlib-base: '>=3.6'
+    numpy: '>=1.19,<3'
+    packaging: '>=21'
+    pyproj: '>=3.3.1'
+    pyshp: '>=2.3'
+    python: '>=3.11,<3.12.0a0'
+    python_abi: 3.11.*
+    shapely: '>=1.8'
+  url: https://conda.anaconda.org/conda-forge/linux-64/cartopy-0.24.0-py311h7db5c69_0.conda
+  hash:
+    md5: 20ba399d57a2b5de789a5b24341481a1
+    sha256: 992dd015dcb428c7bbd92f1de18fa3eb1f2cb084625ccf676a91727172361f2d
   category: main
   optional: false
 - name: certifi
@@ -2634,10 +2656,10 @@ package:
     libgcc: '>=14'
     libgfortran: ''
     libgfortran5: '>=14.3.0'
-  url: https://conda.anaconda.org/conda-forge/linux-64/libopenblas-0.3.30-pthreads_h94d23a6_0.conda
+  url: https://conda.anaconda.org/conda-forge/linux-64/libopenblas-0.3.30-pthreads_h94d23a6_1.conda
   hash:
-    md5: 323dc8f259224d13078aaf7ce96c3efe
-    sha256: 225f4cfdb06b3b73f870ad86f00f49a9ca0a8a2d2afe59440521fafe2b6c23d9
+    md5: 7e2ba4ca7e6ffebb7f7fc2da2744df61
+    sha256: 3f3fc30fe340bc7f8f46fea6a896da52663b4d95caed1f144e8ea114b4bb6b61
   category: main
   optional: false
 - name: libopentelemetry-cpp
@@ -3977,6 +3999,18 @@ package:
   hash:
     md5: 5e6251fd41d984a9d4fd1fe4b9bdca31
     sha256: f40110e0ba18460fb26c88558bac242a06b318d8e1e2943cfafb71b748575aed
+  category: main
+  optional: false
+- name: pyshp
+  version: 2.4.0
+  manager: conda
+  platform: linux-64
+  dependencies:
+    python: '>=3.9'
+  url: https://conda.anaconda.org/conda-forge/noarch/pyshp-2.4.0-pyhd8ed1ab_0.conda
+  hash:
+    md5: 14183a69259a0481a14668ec140abb1a
+    sha256: d007ddf928697b2e6964385cf40a79f0b527f2f5449deb95190578bf967e08b9
   category: main
   optional: false
 - name: pysocks

@@ -3,6 +3,7 @@ channels:
   - conda-forge
   - nodefaults
 dependencies:
+  - cartopy>=0.24.0
   - cftime>=1.6.4
   - jupyterlab=4.1.5
   - jupyter-book=1.0.3
