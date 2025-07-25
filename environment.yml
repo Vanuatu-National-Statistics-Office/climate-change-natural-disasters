@@ -10,6 +10,7 @@ dependencies:
   - matplotlib-base>=3.10.3
   - obstore>=0.7.0
   - odc-stac>=0.3.2
+  - planetary-computer>=1.0.0
   - python=3.11
   - gdown
   - xclim>=0.57.0

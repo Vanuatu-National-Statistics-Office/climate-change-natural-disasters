@@ -13,7 +13,7 @@
 version: 1
 metadata:
   content_hash:
-    linux-64: dd232a17a79b4968e505e9226cc0dd445b01c751fb6e9976e7c028b33d830d67
+    linux-64: 96674b3984b51e0782ed7cb09a76ad380c24d8071958ae5742c337b6e43340be
   channels:
   - url: conda-forge
     used_env_vars: []
@@ -81,6 +81,19 @@ package:
   hash:
     md5: def531a3ac77b7fb8c21d17bb5d0badb
     sha256: fd39ad2fabec1569bbb0dfdae34ab6ce7de6ec09dcec8638f83dad0373594069
+  category: main
+  optional: false
+- name: annotated-types
+  version: 0.7.0
+  manager: conda
+  platform: linux-64
+  dependencies:
+    python: '>=3.9'
+    typing-extensions: '>=4.0.0'
+  url: https://conda.anaconda.org/conda-forge/noarch/annotated-types-0.7.0-pyhd8ed1ab_1.conda
+  hash:
+    md5: 2934f256a8acfe48f6ebb4fce6cde29c
+    sha256: e0ea1ba78fbb64f17062601edda82097fcf815012cf52bb704150a2668110d48
   category: main
   optional: false
 - name: anyio
@@ -3735,6 +3748,26 @@ package:
     sha256: 0826610d55955ea4b274a6b2553902f285901cd0082aa20e139de5355f1a5acc
   category: main
   optional: false
+- name: planetary-computer
+  version: 1.0.0
+  manager: conda
+  platform: linux-64
+  dependencies:
+    click: '>=7.1'
+    packaging: ''
+    pydantic: '>=1.7.3'
+    pystac: '>=1.0.0'
+    pystac-client: '>=0.2.0'
+    python: '>=3.9'
+    python-dotenv: ''
+    pytz: '>=2020.5'
+    requests: '>=2.25.1'
+  url: https://conda.anaconda.org/conda-forge/noarch/planetary-computer-1.0.0-pyhd8ed1ab_1.conda
+  hash:
+    md5: 9477c2eb3a49f043c828384f277f29a6
+    sha256: e5cec11b9fdfafd7955fbfceddff95598d249195ac77994e5f9203ddb67ecf68
+  category: main
+  optional: false
 - name: platformdirs
   version: 4.3.8
   manager: conda
@@ -3940,6 +3973,39 @@ package:
     sha256: 79db7928d13fab2d892592223d7570f5061c192f27b9febd1a418427b719acc6
   category: main
   optional: false
+- name: pydantic
+  version: 2.11.7
+  manager: conda
+  platform: linux-64
+  dependencies:
+    annotated-types: '>=0.6.0'
+    pydantic-core: 2.33.2
+    python: '>=3.9'
+    typing-extensions: '>=4.6.1'
+    typing-inspection: '>=0.4.0'
+    typing_extensions: '>=4.12.2'
+  url: https://conda.anaconda.org/conda-forge/noarch/pydantic-2.11.7-pyh3cfb1c2_0.conda
+  hash:
+    md5: 1b337e3d378cde62889bb735c024b7a2
+    sha256: ee7823e8bc227f804307169870905ce062531d36c1dcf3d431acd65c6e0bd674
+  category: main
+  optional: false
+- name: pydantic-core
+  version: 2.33.2
+  manager: conda
+  platform: linux-64
+  dependencies:
+    __glibc: '>=2.17,<3.0.a0'
+    libgcc: '>=13'
+    python: ''
+    python_abi: 3.11.*
+    typing-extensions: '>=4.6.0,!=4.7.0'
+  url: https://conda.anaconda.org/conda-forge/linux-64/pydantic-core-2.33.2-py311hdae7d1d_0.conda
+  hash:
+    md5: 484d0d62d4b069d5372680309fc5f00c
+    sha256: b48e5abb6debae4f559b08cdbaf0736c7806adc00c106ced2c98a622b7081d8f
+  category: main
+  optional: false
 - name: pydata-sphinx-theme
   version: 0.15.4
   manager: conda
@@ -4039,6 +4105,21 @@ package:
     sha256: 64037bb49b40b9477cff51991ee4831a9b3e227a39cd10aa7822199538027a9f
   category: main
   optional: false
+- name: pystac-client
+  version: 0.9.0
+  manager: conda
+  platform: linux-64
+  dependencies:
+    pystac: '>=1.10.0'
+    python: '>=3.10'
+    python-dateutil: '>=2.8.2'
+    requests: '>=2.28.2'
+  url: https://conda.anaconda.org/conda-forge/noarch/pystac-client-0.9.0-pyhd8ed1ab_0.conda
+  hash:
+    md5: d10aaa4bf5c9fc88730007bf64cda768
+    sha256: 0dbfe9e842ece00ab14736021f959db84663306ab2ffe44263991d30aa595106
+  category: main
+  optional: false
 - name: python
   version: 3.11.13
   manager: conda
@@ -4078,6 +4159,18 @@ package:
   hash:
     md5: 5b8d21249ff20967101ffa321cab24e8
     sha256: d6a17ece93bbd5139e02d2bd7dbfa80bee1a4261dced63f65f679121686bf664
+  category: main
+  optional: false
+- name: python-dotenv
+  version: 1.1.1
+  manager: conda
+  platform: linux-64
+  dependencies:
+    python: ''
+  url: https://conda.anaconda.org/conda-forge/noarch/python-dotenv-1.1.1-pyhe01879c_0.conda
+  hash:
+    md5: a245b3c04afa11e2e52a0db91550da7c
+    sha256: 9a90570085bedf4c6514bcd575456652c47918ff3d7b383349e26192a4805cc8
   category: main
   optional: false
 - name: python-fastjsonschema
@@ -4991,6 +5084,19 @@ package:
   hash:
     md5: 75be1a943e0a7f99fcf118309092c635
     sha256: 349951278fa8d0860ec6b61fcdc1e6f604e6fce74fabf73af2e39a37979d0223
+  category: main
+  optional: false
+- name: typing-inspection
+  version: 0.4.1
+  manager: conda
+  platform: linux-64
+  dependencies:
+    python: '>=3.9'
+    typing_extensions: '>=4.12.0'
+  url: https://conda.anaconda.org/conda-forge/noarch/typing-inspection-0.4.1-pyhd8ed1ab_0.conda
+  hash:
+    md5: e0c3cd765dc15751ee2f0b03cd015712
+    sha256: 4259a7502aea516c762ca8f3b8291b0d4114e094bdb3baae3171ccc0900e722f
   category: main
   optional: false
 - name: typing_extensions
