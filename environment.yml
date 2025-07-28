@@ -12,4 +12,5 @@ dependencies:
   - odc-stac>=0.3.2
   - python=3.11
   - pystac-client>=0.9.0
+  - stackstac>=0.5.1
   - zarr>=3.1.0
