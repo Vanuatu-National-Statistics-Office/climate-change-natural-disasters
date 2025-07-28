@@ -13,7 +13,7 @@
 version: 1
 metadata:
   content_hash:
-    linux-64: 56ff6984e05aafaa4250c8bbbaffb350db5ecafcef6d70ded5fb94a6975554d3
+    linux-64: 4dc7cd1d3ac2cd40745e100ee66fddf8135560a1f108f7f3f4844b2c1831b7c3
   channels:
   - url: conda-forge
     used_env_vars: []
@@ -491,6 +491,20 @@ package:
   hash:
     md5: 364ba6c9fb03886ac979b482f39ebb92
     sha256: 21ecead7268241007bf65691610cd7314da68c1f88113092af690203b5780db5
+  category: main
+  optional: false
+- name: cmcrameri
+  version: '1.9'
+  manager: conda
+  platform: linux-64
+  dependencies:
+    matplotlib-base: ''
+    numpy: ''
+    python: '>=3.9'
+  url: https://conda.anaconda.org/conda-forge/noarch/cmcrameri-1.9-pyhd8ed1ab_1.conda
+  hash:
+    md5: a41af9fb6bccb9600a5d013fea164c6a
+    sha256: bab0f307731409dd8fd8669bbc308693a428e0d233b7f1fbc2141d9e01c5aded
   category: main
   optional: false
 - name: colorama
