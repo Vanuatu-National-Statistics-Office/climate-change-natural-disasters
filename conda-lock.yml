@@ -13,7 +13,7 @@
 version: 1
 metadata:
   content_hash:
-    linux-64: 4dc7cd1d3ac2cd40745e100ee66fddf8135560a1f108f7f3f4844b2c1831b7c3
+    linux-64: 979ba4ca29f2d97ae61fffb22659833e7c692a856d6ba0683c2729502d772483
   channels:
   - url: conda-forge
     used_env_vars: []
@@ -799,6 +799,22 @@ package:
     sha256: 556243e37e12cb99461e782b1713d24e0d134b2bcc66930ec8d7bfde10d52c3d
   category: main
   optional: false
+- name: geopandas-base
+  version: 1.1.1
+  manager: conda
+  platform: linux-64
+  dependencies:
+    numpy: '>=1.24'
+    packaging: ''
+    pandas: '>=2.0.0'
+    python: '>=3.10'
+    shapely: '>=2.0.0'
+  url: https://conda.anaconda.org/conda-forge/noarch/geopandas-base-1.1.1-pyha770c72_0.conda
+  hash:
+    md5: 8094c45b21a26cddd6354401eddc2567
+    sha256: c6195500934234f0c52763e00cf8ffb79bcf34f248fa6c4af848379fe8436479
+  category: main
+  optional: false
 - name: geos
   version: 3.13.1
   manager: conda
@@ -1021,7 +1037,7 @@ package:
   category: main
   optional: false
 - name: ipykernel
-  version: 6.29.5
+  version: 6.30.0
   manager: conda
   platform: linux-64
   dependencies:
@@ -1029,20 +1045,20 @@ package:
     comm: '>=0.1.1'
     debugpy: '>=1.6.5'
     ipython: '>=7.23.1'
-    jupyter_client: '>=6.1.12'
+    jupyter_client: '>=8.0.0'
     jupyter_core: '>=4.12,!=5.0.*'
     matplotlib-inline: '>=0.1'
-    nest-asyncio: ''
-    packaging: ''
-    psutil: ''
-    python: '>=3.8'
-    pyzmq: '>=24'
-    tornado: '>=6.1'
+    nest-asyncio: '>=1.4'
+    packaging: '>=22'
+    psutil: '>=5.7'
+    python: '>=3.9'
+    pyzmq: '>=25'
+    tornado: '>=6.2'
     traitlets: '>=5.4.0'
-  url: https://conda.anaconda.org/conda-forge/noarch/ipykernel-6.29.5-pyh3099207_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/ipykernel-6.30.0-pyh82676e8_0.conda
   hash:
-    md5: b40131ab6a36ac2c09b7c57d4d3fbf99
-    sha256: 33cfd339bb4efac56edf93474b37ddc049e08b1b4930cf036c893cc1f5a1f32a
+    md5: 4aeff93cd0cc9b39f82cc5df70c58a43
+    sha256: c49650d0af6dab125dfb8ca1593c24172ae640fa3298530704fe4151499d24b2
   category: main
   optional: false
 - name: ipython
@@ -3032,6 +3048,25 @@ package:
     sha256: 5577623b9f6685ece2697c6eb7511b4c9ac5fb607c9babc2646c811b428fd46a
   category: main
   optional: false
+- name: pyogrio
+  version: 0.11.0
+  manager: conda
+  platform: linux-64
+  dependencies:
+    __glibc: '>=2.17,<3.0.a0'
+    libgcc: '>=13'
+    libgdal-core: '>=3.10.3,<3.11.0a0'
+    libstdcxx: '>=13'
+    numpy: ''
+    packaging: ''
+    python: '>=3.11,<3.12.0a0'
+    python_abi: 3.11.*
+  url: https://conda.anaconda.org/conda-forge/linux-64/pyogrio-0.11.0-py311hf6089d3_0.conda
+  hash:
+    md5: aa38d38d9516dbca2b7c60173b0ff8f1
+    sha256: 294f3ddc6307639b9966ee9ad064d611c1caeb239fca91cde357c59909a7fba7
+  category: main
+  optional: false
 - name: pyparsing
   version: 3.2.3
   manager: conda
@@ -3752,20 +3787,20 @@ package:
   category: main
   optional: false
 - name: sqlalchemy
-  version: 2.0.41
+  version: 2.0.42
   manager: conda
   platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     greenlet: '!=0.4.17'
-    libgcc: '>=13'
+    libgcc: '>=14'
     python: '>=3.11,<3.12.0a0'
     python_abi: 3.11.*
     typing-extensions: '>=4.6.0'
-  url: https://conda.anaconda.org/conda-forge/linux-64/sqlalchemy-2.0.41-py311h9ecbd09_0.conda
+  url: https://conda.anaconda.org/conda-forge/linux-64/sqlalchemy-2.0.42-py311h49ec1c0_0.conda
   hash:
-    md5: a45573d9f1f67e0865940a5b688a7f9c
-    sha256: f56d1873c0184788ff6d03bfd0139aba3343e098fc9110d482aaa72b354ecb25
+    md5: d87f15566e93204dd613ccd749a23916
+    sha256: c2c3249403a40ad7a6f7e1b20260f81b6634182315580a14e2383f964fadd156
   category: main
   optional: false
 - name: sqlite
@@ -3878,11 +3913,11 @@ package:
   manager: conda
   platform: linux-64
   dependencies:
-    python: '>=3.9'
-  url: https://conda.anaconda.org/conda-forge/noarch/tomli-2.2.1-pyhd8ed1ab_1.conda
+    python: ''
+  url: https://conda.anaconda.org/conda-forge/noarch/tomli-2.2.1-pyhe01879c_2.conda
   hash:
-    md5: ac944244f1fed2eb49bae07193ae8215
-    sha256: 18636339a79656962723077df9a56c0ac7b8a864329eb8f847ee3d38495b863e
+    md5: 30a0a26c8abccf4b7991d590fe17c699
+    sha256: 040a5a05c487647c089ad5e05ad5aff5942830db2a4e656f1e300d73436436f1
   category: main
   optional: false
 - name: toolz

@@ -6,6 +6,7 @@ dependencies:
   - cftime>=1.6.4
   - cmcrameri>=1.9
   - gdown
+  - geopandas-base>=1.1.1
   - jupyterlab=4.1.5
   - jupyter-book=1.0.3
   - matplotlib-base>=3.10.3
@@ -13,6 +14,7 @@ dependencies:
   - odc-stac>=0.3.2
   - planetary-computer>=1.0.0
   - python=3.11
+  - pyogrio>=0.11.0
   - pystac-client>=0.9.0
   - stackstac>=0.5.1
   - zarr>=3.1.0
