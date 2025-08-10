@@ -17,3 +17,4 @@ parts:
       - file: Lesson_1C.ipynb
       - file: Lesson_1D.ipynb
       - file: Lesson_1E.ipynb
+      - file: Lesson_2B.ipynb
