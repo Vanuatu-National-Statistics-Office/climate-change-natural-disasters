@@ -13,6 +13,7 @@ Climate Change Monitoring and Disaster Preparedness.
 | 26/03/2025 | [Lesson 1C: Segmentation workflow using PyTorch for flood and water mask detection](./book/Lesson_1C.ipynb) |
 | 08/05/2025 | [Lesson 1D: Road segmentation](./book/Lesson_1D.ipynb) |
 | 19/06/2025 | [Lesson 1E: Full country Land Use / Land Cover Segmentation Using GeoMedian Composite Sentinel-2 and GPU-accelerated Random Forest](./book/Lesson_1E.ipynb) |
+| 11/08/2025 | [Lesson 2A: Coastal changes](./book/Lesson_2A.ipynb) |
 
 ## Getting started
 

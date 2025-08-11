@@ -1,4 +1,6 @@
 # Data files
+**/*.geojson
+**/*.gpkg
 **/*.tif
 **/*.tiff
 
