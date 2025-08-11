@@ -13,7 +13,7 @@
 version: 1
 metadata:
   content_hash:
-    linux-64: 4e536da660d173a4af92435d5d8fcaafa4c20379e32ec5221884b8f6cbf0899a
+    linux-64: d4cb02d56d941bb6b4d73390da4eb79cc823d66fe4779318525de528b60e26f9
   channels:
   - url: conda-forge
     used_env_vars: []
@@ -4519,6 +4519,22 @@ package:
   hash:
     md5: 87f6abadb59e4b17fc3a7b666faa721f
     sha256: 52352d0f9388cf215c79690732e560bc6a33fb463a9176f6d2af6df84da8f4f7
+  category: main
+  optional: false
+- name: seaborn-base
+  version: 0.13.2
+  manager: conda
+  platform: linux-64
+  dependencies:
+    matplotlib-base: '>=3.4,!=3.6.1'
+    numpy: '>=1.20,!=1.24.0'
+    pandas: '>=1.2'
+    python: '>=3.9'
+    scipy: '>=1.7'
+  url: https://conda.anaconda.org/conda-forge/noarch/seaborn-base-0.13.2-pyhd8ed1ab_3.conda
+  hash:
+    md5: fd96da444e81f9e6fcaac38590f3dd42
+    sha256: f209c9c18187570b85ec06283c72d64b8738f825b1b82178f194f4866877f8aa
   category: main
   optional: false
 - name: send2trash
