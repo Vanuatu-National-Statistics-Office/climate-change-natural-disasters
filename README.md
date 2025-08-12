@@ -17,6 +17,8 @@ Climate Change Monitoring and Disaster Preparedness.
 | 11/08/2025 | [Lesson 2B: Assessing Flood Risk from Past Weather](./book/Lesson_2B.ipynb) |
 | 12/08/2025 | [Lesson 2C: Climate indicators](./book/Lesson_2C.ipynb) |
 | 12/08/2025 | [Lesson 2C (continued): Marine heat waves](./book/Lesson_2C_marineheatwaves.ipynb) |
+| 12/08/2025 | [Lesson 2D: Coral reef mapping](./book/Lesson_2D.ipynb) |
+| 13/08/2025 | [Lesson 2E: Soil health](./book/Lesson_2E.ipynb) |
 
 ## Getting started
 

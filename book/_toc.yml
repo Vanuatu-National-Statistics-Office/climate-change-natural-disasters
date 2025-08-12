@@ -20,4 +20,6 @@ parts:
       - file: Lesson_2A.ipynb
       - file: Lesson_2B.ipynb
       - file: Lesson_2C.ipynb
+      - file: Lesson_2C_marineheatwaves.ipynb
       - file: Lesson_2D.ipynb
+      - file: Lesson_2E.ipynb
