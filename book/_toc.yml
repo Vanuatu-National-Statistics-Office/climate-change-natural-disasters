@@ -20,3 +20,4 @@ parts:
       - file: Lesson_2A.ipynb
       - file: Lesson_2B.ipynb
       - file: Lesson_2C.ipynb
+      - file: Lesson_2D.ipynb
