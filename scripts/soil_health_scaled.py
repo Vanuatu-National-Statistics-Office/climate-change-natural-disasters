@@ -148,6 +148,10 @@ for idx, row in tqdm(admin_boundaries_gdf.reset_index().iterrows(), total=len(ad
 
 # Build output geodataframe
 output_gdf = gpd.GeoDataFrame(results, crs=admin_boundaries_gdf.crs)
+output_gdf = output_gdf.rename(columns={
+    "Pname": "PROVINCE",
+    "ACNAME22": "Area Council"
+})
 
 # Save as GeoJSON
 output_geojson = os.path.join(OUTPUT_DIR, f"admin_index_means_{YEAR}.geojson")
