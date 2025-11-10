@@ -2,6 +2,7 @@ import os
 import math
 from datetime import datetime, timedelta
 import numpy as np
+import pandas as pd
 import geopandas as gpd
 import xarray as xr
 import rioxarray as rxr
@@ -13,24 +14,28 @@ from pystac_client import Client
 import odc.stac
 from tqdm import tqdm
 
+# Configuration
+YEAR = 2017  # Change for each composite year (2017–2024)
 ADMIN_GEOZIP = "./AC2022.zip"
-OUTPUT_DIR = "soil_health_output"
-YEAR = 2017 # Iterate range for each year of composite (2017-2024)
+OUTPUT_DIR = "soil_health_output1"
 DATERANGE_START = f"{YEAR}-01-01"
 DATERANGE_END = f"{YEAR}-12-31"
 AWS_STAC_URL = "http://stac.digitalearthpacific.org/"
-CRS_OUT = "EPSG:32759"   # target CRS
+CRS_OUT = "EPSG:32759"
 BANDS = ["red", "green", "blue", "nir", "swir16"]
 RESOLUTION = 10
 CHUNKS = {'x': 1024, 'y': 1024, 'bands': -1, 'time': -1}
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
+# Load admin boundaries
 admin_boundaries_gdf = gpd.read_file(ADMIN_GEOZIP)
 print(f"Loaded {len(admin_boundaries_gdf)} polygons from {ADMIN_GEOZIP}")
 
+# STAC client
 stac_client = Client.open(AWS_STAC_URL)
 
+# Index functions
 def compute_ndmi(nir, swir):
     return (nir - swir) / (nir + swir)
 
@@ -52,15 +57,16 @@ def compute_nbr(nir, swir16):
     return (nir - swir16) / (nir + swir16)
 
 
+# Processing loop
 results = []
 
-for idx, row in tqdm(admin_boundaries_gdf.reset_index().iterrows(), total=len(admin_boundaries_gdf), desc="Processing polygons"):
+for idx, row in tqdm(admin_boundaries_gdf.reset_index().iterrows(), total=len(admin_boundaries_gdf), desc=f"Processing polygons for {YEAR}"):
     geom = row.geometry
     raw_name = str(row.get("ACNAME22", f"admin_{idx}"))
     safe_name = raw_name.replace(" ", "_").replace("-", "_")
     print(f"\nProcessing {raw_name} ...")
 
-    # Convert to Lat/Lon degrees for STAC query
+    # Convert to lat/lon for STAC
     geom_ll = geom
     if admin_boundaries_gdf.crs and admin_boundaries_gdf.crs.to_string() != "EPSG:4326":
         project_to_wgs = pyproj.Transformer.from_crs(admin_boundaries_gdf.crs, "EPSG:4326", always_xy=True).transform
@@ -69,7 +75,7 @@ for idx, row in tqdm(admin_boundaries_gdf.reset_index().iterrows(), total=len(ad
     minx, miny, maxx, maxy = geom_ll.bounds
     bbox = (minx, miny, maxx, maxy)
 
-    # STAC search for Sentinel-2 GeoMAD items
+    # Search Sentinel-2 GeoMAD items
     s2_search = stac_client.search(
         collections=["dep_s2_geomad"],
         bbox=bbox,
@@ -79,7 +85,6 @@ for idx, row in tqdm(admin_boundaries_gdf.reset_index().iterrows(), total=len(ad
 
     if len(s2_items) == 0:
         print(f"  -> No Sentinel-2 items found for {raw_name}, skipping.")
-        # Add empty index columns for consistency
         results.append({**row, **{f"{i}_mean": np.nan for i in ['ndmi','bsi','ndvi','savi','msavi2','nbr']}})
         continue
 
@@ -104,7 +109,7 @@ for idx, row in tqdm(admin_boundaries_gdf.reset_index().iterrows(), total=len(ad
     else:
         geom_proj = geom
 
-    # Create mask for polygon
+    # Polygon mask
     mask = geometry_mask(
         geometries=[mapping(geom_proj)],
         transform=s2_data.odc.transform,
@@ -112,7 +117,6 @@ for idx, row in tqdm(admin_boundaries_gdf.reset_index().iterrows(), total=len(ad
         invert=True
     )
     mask_xr = xr.DataArray(mask, dims=("y", "x"), coords={"y": s2_data.y, "x": s2_data.x})
-
     s2_masked = s2_data.where(mask_xr)
 
     # Compute indices
@@ -125,35 +129,31 @@ for idx, row in tqdm(admin_boundaries_gdf.reset_index().iterrows(), total=len(ad
         nbr=compute_nbr(s2_masked['nir'], s2_masked['swir16'])
     )
 
-    # Compute mean of each index
+    # Compute means
     index_means = {}
     for index_name in ["ndmi", "bsi", "ndvi", "savi", "msavi2", "nbr"]:
         try:
-            mean_val = (
-                s2_masked[index_name]
-                .mean(skipna=True)
-                .compute()
-                .item()
-            )
+            mean_val = s2_masked[index_name].mean(skipna=True).compute().item()
         except Exception:
             mean_val = np.nan
         index_means[f"{index_name}_mean"] = mean_val
 
     print(f"  -> Index means: {index_means}")
-
-    # Combine with original row data
     result_row = {**row.to_dict(), **index_means}
     results.append(result_row)
 
-
-# Build output geodataframe
+# Build and save outputs
 output_gdf = gpd.GeoDataFrame(results, crs=admin_boundaries_gdf.crs)
-output_gdf = output_gdf.rename(columns={
-    "Pname": "PROVINCE",
-    "ACNAME22": "Area Council"
-})
 
-# Save as GeoJSON
-output_geojson = os.path.join(OUTPUT_DIR, f"admin_index_means_{YEAR}.geojson")
-output_gdf.to_file(output_geojson, driver="GeoJSON")
-print(f"\nSaved final GeoJSON with index means to: {output_geojson}")
+# Drop geometry for flat CSV
+output_gdf = output_gdf.drop(columns=["geometry"], errors="ignore")
+
+# Define paths
+output_csv = os.path.join(OUTPUT_DIR, f"admin_index_means_{YEAR}.csv")
+output_gdf.to_csv(output_csv, index=False)
+print(f"\nSaved final CSV to: {output_csv}")
+
+# Optional reload for schema check 
+output_df = pd.read_csv(output_csv)
+print(f"Reloaded {len(output_df)} rows for verification.")
+output_df.head()
