@@ -1,11 +1,8 @@
 import os
-import math
-from datetime import datetime, timedelta
 import numpy as np
 import pandas as pd
 import geopandas as gpd
 import xarray as xr
-import rioxarray as rxr
 import pyproj
 from shapely.ops import transform
 from shapely.geometry import mapping
@@ -20,7 +17,7 @@ ADMIN_GEOZIP = "./AC2022.zip"
 OUTPUT_DIR = "soil_health_output1"
 DATERANGE_START = f"{YEAR}-01-01"
 DATERANGE_END = f"{YEAR}-12-31"
-AWS_STAC_URL = "http://stac.digitalearthpacific.org/"
+STAC_URL = "http://stac.digitalearthpacific.org/"
 CRS_OUT = "EPSG:32759"
 BANDS = ["red", "green", "blue", "nir", "swir16"]
 RESOLUTION = 10
@@ -33,7 +30,7 @@ admin_boundaries_gdf = gpd.read_file(ADMIN_GEOZIP)
 print(f"Loaded {len(admin_boundaries_gdf)} polygons from {ADMIN_GEOZIP}")
 
 # STAC client
-stac_client = Client.open(AWS_STAC_URL)
+stac_client = Client.open(STAC_URL)
 
 # Index functions
 def compute_ndmi(nir, swir):
