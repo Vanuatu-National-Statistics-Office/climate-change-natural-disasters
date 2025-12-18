@@ -16,6 +16,8 @@ methods for Climate Change Monitoring and Natural Disaster Preparedness.
 Intro to Selecting and Processing Raster Data
 +++
 ![Lesson 1A thumbnail](images/lesson_1a_thumbnail.png)
+:::{note} Use CPU 30GB
+{button}`Run on DEP <https://hub.digitalearthpacific.org/hub/user-redirect/git-pull?repo=git%40github.com%3AVanuatu-National-Statistics-Office%2Fclimate-change-natural-disasters&urlpath=lab%2Ftree%2Fclimate-change-natural-disasters%2Fbook%2FLesson_1A.ipynb&branch=main>`
 :::
 
 :::{card}
@@ -24,6 +26,8 @@ Intro to Selecting and Processing Raster Data
 Land Use / Land Cover Segmentation Using Sentinel-2 and Random Forest
 +++
 ![Lesson 1B thumbnail](images/lesson_1b_thumbnail.png)
+:::{note} Use CPU 30GB
+{button}`Run on DEP <https://hub.digitalearthpacific.org/hub/user-redirect/git-pull?repo=git%40github.com%3AVanuatu-National-Statistics-Office%2Fclimate-change-natural-disasters&urlpath=lab%2Ftree%2Fclimate-change-natural-disasters%2Fbook%2FLesson_1B.ipynb&branch=main>`
 :::
 
 :::{card}
@@ -32,6 +36,8 @@ Land Use / Land Cover Segmentation Using Sentinel-2 and Random Forest
 Segmentation workflow using PyTorch for flood and water mask detection
 +++
 ![Lesson 1C thumbnail](images/lesson_1c_thumbnail.png)
+:::{note} Use CPU 30GB
+{button}`Run on DEP <https://hub.digitalearthpacific.org/hub/user-redirect/git-pull?repo=git%40github.com%3AVanuatu-National-Statistics-Office%2Fclimate-change-natural-disasters&urlpath=lab%2Ftree%2Fclimate-change-natural-disasters%2Fbook%2FLesson_1C.ipynb&branch=main>`
 :::
 
 :::{card}
@@ -40,6 +46,8 @@ Segmentation workflow using PyTorch for flood and water mask detection
 Road segmentation
 +++
 ![Lesson 1D thumbnail](images/lesson_1d_thumbnail.png)
+:::{tip} Use GPU 30GB
+{button}`Run on DEP <https://hub.digitalearthpacific.org/hub/user-redirect/git-pull?repo=git%40github.com%3AVanuatu-National-Statistics-Office%2Fclimate-change-natural-disasters&urlpath=lab%2Ftree%2Fclimate-change-natural-disasters%2Fbook%2FLesson_1D.ipynb&branch=main>`
 :::
 
 :::{card}
@@ -48,6 +56,8 @@ Road segmentation
 Full country LULC Segmentation Using GeoMedian Composite Sentinel-2 and GPU-accelerated Random Forest
 +++
 ![Lesson 1E thumbnail](images/lesson_1e_thumbnail.png)
+:::{hint} Use GPU 60GB
+{button}`Run on DEP <https://hub.digitalearthpacific.org/hub/user-redirect/git-pull?repo=git%40github.com%3AVanuatu-National-Statistics-Office%2Fclimate-change-natural-disasters&urlpath=lab%2Ftree%2Fclimate-change-natural-disasters%2Fbook%2FLesson_1D.ipynb&branch=main>`
 :::
 
 ::::
@@ -64,6 +74,8 @@ Full country LULC Segmentation Using GeoMedian Composite Sentinel-2 and GPU-acce
 Coastal changes
 +++
 ![Lesson 2A thumbnail](images/lesson_2a_thumbnail.png)
+:::{note} Use CPU 30GB
+{button}`Run on DEP <https://hub.digitalearthpacific.org/hub/user-redirect/git-pull?repo=git%40github.com%3AVanuatu-National-Statistics-Office%2Fclimate-change-natural-disasters&urlpath=lab%2Ftree%2Fclimate-change-natural-disasters%2Fbook%2FLesson_2A.ipynb&branch=main>`
 :::
 
 :::{card}
@@ -72,6 +84,8 @@ Coastal changes
 Assessing Flood Risk from Past Weather
 +++
 ![Lesson 2B thumbnail](images/lesson_2b_thumbnail.png)
+:::{important} Use CPU 60GB
+{button}`Run on DEP <https://hub.digitalearthpacific.org/hub/user-redirect/git-pull?repo=git%40github.com%3AVanuatu-National-Statistics-Office%2Fclimate-change-natural-disasters&urlpath=lab%2Ftree%2Fclimate-change-natural-disasters%2Fbook%2FLesson_2B.ipynb&branch=main>`
 :::
 
 :::{card}
@@ -80,6 +94,8 @@ Assessing Flood Risk from Past Weather
 Climate indicators
 +++
 ![Lesson 2C thumbnail](images/lesson_2c_thumbnail.png)
+:::{note} Use CPU 30GB
+{button}`Run on DEP <https://hub.digitalearthpacific.org/hub/user-redirect/git-pull?repo=git%40github.com%3AVanuatu-National-Statistics-Office%2Fclimate-change-natural-disasters&urlpath=lab%2Ftree%2Fclimate-change-natural-disasters%2Fbook%2FLesson_2C.ipynb&branch=main>`
 :::
 
 :::{card}
@@ -88,6 +104,8 @@ Climate indicators
 Marine heat waves
 +++
 ![Lesson 2C marineheatwave thumbnail](images/lesson_2c_marineheatwave_thumbnail.png)
+:::{important} Use CPU 60GB
+{button}`Run on DEP <https://hub.digitalearthpacific.org/hub/user-redirect/git-pull?repo=git%40github.com%3AVanuatu-National-Statistics-Office%2Fclimate-change-natural-disasters&urlpath=lab%2Ftree%2Fclimate-change-natural-disasters%2Fbook%2FLesson_2C_marineheatwaves.ipynb&branch=main>`
 :::
 
 :::{card}
@@ -96,6 +114,8 @@ Marine heat waves
 Coral reef mapping
 +++
 ![Lesson 2D thumbnail](images/nbgi.png)
+:::{important} Use CPU 60GB
+{button}`Run on DEP <https://hub.digitalearthpacific.org/hub/user-redirect/git-pull?repo=git%40github.com%3AVanuatu-National-Statistics-Office%2Fclimate-change-natural-disasters&urlpath=lab%2Ftree%2Fclimate-change-natural-disasters%2Fbook%2FLesson_2D.ipynb&branch=main>`
 :::
 
 :::{card}
@@ -104,6 +124,8 @@ Coral reef mapping
 Soil health
 +++
 ![Lesson 2E thumbnail](images/lesson_2e_thumbnail.png)
+:::{important} Use CPU 60GB
+{button}`Run on DEP <https://hub.digitalearthpacific.org/hub/user-redirect/git-pull?repo=git%40github.com%3AVanuatu-National-Statistics-Office%2Fclimate-change-natural-disasters&urlpath=lab%2Ftree%2Fclimate-change-natural-disasters%2Fbook%2FLesson_2E.ipynb&branch=main>`
 :::
 
 ::::
