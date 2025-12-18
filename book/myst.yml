@@ -1,0 +1,41 @@
+version: 1
+project:
+  title: ML training for Climate Change and Natural Disasters
+  authors:
+    - name: Development Seed
+  github: Vanuatu-National-Statistics-Office/climate-change-natural-disasters
+  bibliography:
+    - references.bib
+  exports:
+    - format: pdf
+      template: plain_latex_book
+      output: exports/book.pdf
+  toc:
+    - file: intro.md
+    - title: Details
+      children:
+        - url: >-
+            https://github.com/Vanuatu-National-Statistics-Office/climate-change-natural-disasters
+          title: Training materials on GitHub
+        - url: https://hub.digitalearthpacific.org
+          title: Digital Earth Pacific Analytics Hub
+    - title: Tutorials (Part 1)
+      children:
+        - file: Lesson_1A.ipynb
+        - file: Lesson_1B.ipynb
+        - file: Lesson_1C.ipynb
+        - file: Lesson_1D.ipynb
+        - file: Lesson_1E.ipynb
+    - title: Tutorials (Part 2)
+      children:
+        - file: Lesson_2A.ipynb
+        - file: Lesson_2B.ipynb
+        - file: Lesson_2C.ipynb
+        - file: Lesson_2C_marineheatwaves.ipynb
+        - file: Lesson_2D.ipynb
+        - file: Lesson_2E.ipynb
+site:
+  options:
+    logo: logo.png
+    folders: true
+  template: book-theme
