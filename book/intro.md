@@ -60,6 +60,15 @@ Full country LULC Segmentation Using GeoMedian Composite Sentinel-2 and GPU-acce
 {button}`Run on DEP <https://hub.digitalearthpacific.org/hub/user-redirect/git-pull?repo=git%40github.com%3AVanuatu-National-Statistics-Office%2Fclimate-change-natural-disasters&urlpath=lab%2Ftree%2Fclimate-change-natural-disasters%2Fbook%2FLesson_1D.ipynb&branch=main>`
 :::
 
+:::{card}
+:header: **Lesson 1E (inference)**
+:link: ./Lesson_1E_inference.ipynb
+Land Accounts inference on Sentinel-2 GeoMAD with Random Forest
++++
+:::{hint} Use GPU 60GB
+{button}`Run on DEP <https://hub.digitalearthpacific.org/hub/user-redirect/git-pull?repo=git%40github.com%3AVanuatu-National-Statistics-Office%2Fclimate-change-natural-disasters&urlpath=lab%2Ftree%2Fclimate-change-natural-disasters%2Fbook%2FLesson_1E_inference.ipynb&branch=main>`
+:::
+
 ::::
 
 

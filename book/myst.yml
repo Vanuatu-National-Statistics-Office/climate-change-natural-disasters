@@ -26,6 +26,7 @@ project:
         - file: Lesson_1C.ipynb
         - file: Lesson_1D.ipynb
         - file: Lesson_1E.ipynb
+        - file: Lesson_1E_inference.ipynb
     - title: Tutorials (Part 2)
       children:
         - file: Lesson_2A.ipynb
