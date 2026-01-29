@@ -25,8 +25,6 @@ project:
         - file: Lesson_1B.ipynb
         - file: Lesson_1C.ipynb
         - file: Lesson_1D.ipynb
-        - file: Lesson_1E.ipynb
-        - file: Lesson_1E_inference.ipynb
     - title: Tutorials (Part 2)
       children:
         - file: Lesson_2A.ipynb
@@ -35,6 +33,12 @@ project:
         - file: Lesson_2C_marineheatwaves.ipynb
         - file: Lesson_2D.ipynb
         - file: Lesson_2E.ipynb
+    - title: Extra scripts
+      children:
+        - file: Lesson_1E.ipynb
+        - file: Lesson_1E_inference.ipynb
+        - file: ../scripts/coral_scaled_geomad.ipynb
+
 site:
   options:
     logo: logo.png
