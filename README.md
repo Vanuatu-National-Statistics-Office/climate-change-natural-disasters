@@ -1,5 +1,8 @@
 # ML training for Climate Change and Natural Disasters
 
+[![Jupyter Book Badge](https://raw.githubusercontent.com/jupyter-book/jupyter-book/v2.1.0/docs/media/images/badge.svg)](https://vanuatu-national-statistics-office.github.io/climate-change-natural-disasters/)
+[![MyST GitHub Pages Deploy](https://github.com/Vanuatu-National-Statistics-Office/climate-change-natural-disasters/actions/workflows/deploy.yml/badge.svg)](https://github.com/Vanuatu-National-Statistics-Office/climate-change-natural-disasters/actions/workflows/deploy.yml)
+
 Building capacity to integrate Machine Learning (ML) and Satellite Imagery for
 Climate Change Monitoring and Disaster Preparedness.
 
